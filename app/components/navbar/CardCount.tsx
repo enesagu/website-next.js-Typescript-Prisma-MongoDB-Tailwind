@@ -1,10 +1,5 @@
+const CardCount = () => {
+  return <div className="hidden md:flex">CardCount</div>;
+};
 
-
-const CardCount = () =>{
-    return (
-        <div>CardCount</div>
-    )
-}
-
-
-export default CardCount
+export default CardCount;
