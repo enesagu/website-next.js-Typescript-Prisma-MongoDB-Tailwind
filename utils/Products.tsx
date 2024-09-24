@@ -7,7 +7,7 @@ export const products = [
       brand: "ABC İnşaat",
       category: "Çimento",
       inStock: true,
-      image: "https://example.com/cimento.jpg",
+      image: "https://tracim.com.tr/wp-content/uploads/2023/12/tracim-42-5-yeni.jpg",
       reviews: [],
     },
     {

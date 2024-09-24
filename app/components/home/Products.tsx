@@ -1,11 +1,20 @@
 import Heading from "../general/Heading";
+import { products } from "@/utils/Products"; 
+import ProductCard from "./ProductCard";
 
 const Products = () => {
 
     return (
-        <div >
-            <Heading text="Tüm Ürünler"/>
-        </div> 
+        <div>
+            <Heading text="Tüm Ürünler" />
+            <div>
+                {
+                    products.map(product => (
+                        <ProductCard key={product.id} product={product} />
+                    ))
+                }
+            </div>
+        </div>
     );
 };
 
