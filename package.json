@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "flowbite-react": "^0.10.1",
+    "mdb-react-ui-kit": "^9.0.0",
     "next": "14.2.13",
     "react": "^18",
     "react-dom": "^18",

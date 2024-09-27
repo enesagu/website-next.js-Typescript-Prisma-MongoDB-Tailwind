@@ -5,9 +5,9 @@ import ProductCard from "./ProductCard";
 const Products = () => {
 
     return (
-        <div>
+        <div className="py-5">
             <Heading text="Tüm Ürünler" />
-            <div>
+            <div className="flex items-center flex-wrap gap-3 md:gap-10 px-3 md:px-10">
                 {
                     products.map(product => (
                         <ProductCard key={product.id} product={product} />
@@ -15,6 +15,7 @@ const Products = () => {
                 }
             </div>
         </div>
+        
     );
 };
 
