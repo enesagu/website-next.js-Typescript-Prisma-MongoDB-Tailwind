@@ -32,14 +32,15 @@ export const products = [
     id: "KXUZDY7Q23",
     name: "Demir 12mm",
     description: "Yüksek mukavemetli inşaat demiri.",
-    price: 50,
+    price: 1500,
     brand: "DemirSA",
     category: "Demir",
     inStock: true,
     image: "https://example.com/demir12mm.jpg",
     reviews: [
-      { user: "Fatma", rating: 5, comment: "Harika kalite." },
+      { user: "Melih", rating: 5, comment: "Harika kalite." },
       { user: "Veli", rating: 4, comment: "Memnunum." }
+
     ],
   },
   {
@@ -151,3 +152,10 @@ export const products = [
     ],
   },
 ];
+
+
+
+
+
+
+

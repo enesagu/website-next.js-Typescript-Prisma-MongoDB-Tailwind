@@ -3,19 +3,19 @@
 const Category = () => {
     const CategoryList = [
         {
-            name: "Ayakkabı",
+            name: "Çimento",
         },
         {
-            name: "Ayakkabı",
+            name: "Kum",
         },
         {
-            name: "Ayakkabı",
+            name: "Demir",
         },
         {
-            name: "Ayakkabı",
+            name: "Boya",
         },
         {
-            name: "Ayakkabı",
+            name: "İşçilik",
         },
     ];
     return (
