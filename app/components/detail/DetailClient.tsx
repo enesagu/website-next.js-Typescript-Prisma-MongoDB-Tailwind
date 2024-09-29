@@ -5,6 +5,9 @@ import Image from "next/image";
 import { useState } from "react";
 import Counter from "../general/Counter";
 import { Rating } from "@mui/material";
+import Button from "../general/Button";
+import Comment from "./Comment"; 
+import Heading from "../general/Heading";
 
 export type CardProductProps = {
   id: string;
@@ -38,7 +41,7 @@ const DetailClient = ({ product }: { product: any }) => {
   };
   const productRating =
     product.reviews?.reduce((acc: number, item: any) => acc + item.rating, 0) /
-    product?.reviews?.length; // 'lenght' yerine 'length' olmalı
+    product?.reviews?.length;
 
   return (
     <PageContainer>
@@ -96,11 +99,15 @@ const DetailClient = ({ product }: { product: any }) => {
 
           {/* Satın Al butonu */}
           <div className="mt-4">
-            <button className="py-2 px-4 bg-blue-600 text-white font-bold hover:bg-blue-700">
-              Satın Al
-            </button>
+            <Button text="Sepete Ekle" small onclick={() => {}} />
           </div>
         </div>
+      </div>
+      <Heading text="Yorumlar"/>
+      <div>
+        {product?.reviews?.map((prd: any) => (
+          <Comment key={prd.id} prd={prd}/>
+        ))}
       </div>
     </PageContainer>
   );

@@ -3,7 +3,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaGithub } from "rea
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-8">
+    <footer className="bg-gray-900 text-white py-8  mt-2">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center flex-wrap">
           {/* Logo and Description */}
