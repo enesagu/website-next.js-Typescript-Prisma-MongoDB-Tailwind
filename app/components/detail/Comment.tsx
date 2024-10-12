@@ -1,14 +1,21 @@
 "use client";
+import { Rating } from "@mui/material";
 import { RxAvatar } from "react-icons/rx";
 
-// Yorum bileşeni
 const Comment = ({ prd }: { prd: any }) => {
+
   return (
-    <div className="border w-full md:w-1/3 p-2 rounded-lg">
+    <div className="border w-full md:-1/3 p-2 rounded-lg my-3">
       {/* Kullanıcı avatarı ve adı */}
       <div className="flex items-center gap-1">
-        <RxAvatar size="25" />
-        <div>{prd?.user?.name}</div>
+        <RxAvatar size="45" />
+        <div>
+          <div>
+          <div>{prd?.user?.name}</div>
+          <Rating name="read-only" value={prd?.rating || 0} readOnly />
+
+          </div>
+        </div>
       </div>
       
       {/* Yorum ve Tarih */}
@@ -26,15 +33,4 @@ const Comment = ({ prd }: { prd: any }) => {
   );
 };
 
-// Yorumlar ana bileşeni
-const Comments = ({ comments }: { comments: any[] }) => {
-  return (
-    <div>
-      {comments.slice().reverse().map((comment, index) => (
-        <Comment key={index} prd={comment} />
-      ))}
-    </div>
-  );
-};
-
-export default Comments;
+export default Comment;
